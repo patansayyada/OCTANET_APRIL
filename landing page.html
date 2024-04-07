@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Paste your CSS styles here */
+    
+        /* General styles */
+        /* General styles */
+button {
+    background-color: rgb(203, 83, 14);
+    height: 50px;
+    width: 120px;
+}
+
+button:hover {
+    color: lime;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    right: 300px;
+    transform: translateY(-50%);
+    max-width: 100px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+/* Phone section styles */
+.android-phones {
+    padding: 20px;
+}
+
+.android-phones h2 {
+    text-align: center;
+}
+
+.phone-compartment {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.phone {
+    text-align: center;
+}
+
+.phone img {
+    max-width: 20%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.phone h2 {
+    margin-bottom: 10px;
+}
+
+.phone ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.phone ul li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+        button {
+            background-color: rgb(203, 83, 14);
+            height: 50px;
+            width: 120px;
+        }
+        /* Add the rest of your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to TECHNO MOBILES</h1>
+        <img src="https://img.freepik.com/premium-vector/mobile-store-logo-design_23-2149750708.jpg" alt="storeLogo" class="logo">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showTab('home')">Home</a></li>
+            <li><a href="#" onclick="showTab('services')">Services</a></li>
+            <li><a href="#" onclick="showTab('about')">About</a></li>
+            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="tab-content">
+    </section>
+
+    <section id="services" class="tab-content" style="display: none;">
+        <h2>Services</h2>
+        <ul>
+            <li>Device sales</li>
+            <li>Activation</li>
+            <li>Technical support</li>
+            <li>Repairs</li>
+            <li>Accessory sales</li>
+            <li>Trade-in programs</li>
+            <li>Financing</li>
+            <li>Insurance</li>
+            <li>Accessory installation</li>
+            <li>Device recycling</li>
+            <!-- Add more service items as needed -->
+        </ul>
+    </section>
+
+    <!-- Add the rest of your HTML content here -->
+</section>
+
+<section id="about" class="tab-content" style="display: none;">
+    <h2>About Us</h2>
+    <p>Our mobile stores offer a wide range of smartphones and accessories in an engaging environment, providing customers with personalized recommendations for a seamless shopping experience.</p>
+</section>
+
+<section id="contact" class="tab-content" style="display: none;">
+    <h2>Contact Us</h2>
+    <p>Address: 123 Main Street, City, Country</p>
+    <p>Phone: +1234567890</p>
+    <p>Email: info@pandumobiles.com</p>
+</section>
+
+<section class="android-phones">
+    <div class="phone-compartment">
+        <div class="phone">
+            <img src="https://i.gadgets360cdn.com/products/large/galaxy-s24-ultra-797x800-1705519965.jpg" alt="Android Phone 1"><br>
+            <a href="https://amzn.in/d/egmGO2R">BUY NOW</a>
+            <h2>Galaxy S24 Ultra</h2>
+            <ul>
+                <li>Top-of-the-line specs</li>
+                <li>Premium user experience</li>
+                <li>High-quality camera</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="phone-compartment">
+        <div class="phone">
+            <img src="https://m.media-amazon.com/images/I/619lW2YtVhL.jpg" alt="Android Phone 2"><br>
+            <a href="https://amzn.in/d/20v8cns">BUY NOW</a>
+            <h2>iQOO 12 5G</h2>
+            <ul>
+                <li>High Refresh Rate Display</li>
+                <li>Sleek Design</li>
+                <li>5G Connectivity</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <div class="phone-compartment">
+        <div class="phone">
+            <img src="https://economictimes.indiatimes.com/thumb/msid-106020197,width-1200,height-1200,resizemode-4,imgsize-84010/oneplus-nord-5g.jpg" alt="Android Phone 3"><br>
+            <a href="https://amzn.in/d/cQN87hN">BUY NOW</a>
+            <h2>OnePlus smartphones</h2>
+            <ul>
+                <li>Premium quality</li>
+                <li>Versatile cameras</li>
+                <li>Sleek design</li>
+                <!-- Add more features as needed -->
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+    <footer>
+        <p>&copy; TECHNO MOBILE All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            var i, tabContent;
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+    </script>
+</body>
+</html>
