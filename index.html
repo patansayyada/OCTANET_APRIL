@@ -1,106 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clothes shop</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to TECHNO MOBILES</h1>
-        <img src="https://img.freepik.com/premium-vector/mobile-store-logo-design_23-2149750708.jpg" alt="storeLogo" class="logo">
-    </header>
-
+  <header>
+    <div>
+      <h1>ROM TRENDS</h1>
+    </div>
     <nav>
-        <ul>
-            <li><a href="#" onclick="showTab('home')">Home</a></li>
-            <li><a href="#" onclick="showTab('services')">Services</a></li>
-            <li><a href="#" onclick="showTab('about')">About</a></li>
-            <li><a href="#" onclick="showTab('contact')">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#" onclick="showHome()">Home</a></li>
+        <li><a href="#" onclick="showMenProducts()">Men</a></li>
+        <li><a href="#" onclick="showWomenProducts()">Women</a></li>
+        <li><a href="#" onclick="showKidsProducts()">Kids</a></li>
+        <li><a href="#" onclick="showAbout()">About Us</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <section id="home" class="tab-content">
+    <!-- Welcome banner and logo -->
+    <section class="welcome-banner">
+      <img src="https://static.vecteezy.com/system/resources/thumbnails/005/617/820/small/clothing-logo-online-shop-fashion-icon-vector.jpg" alt="ROM TRENDS LOGO">
+      <h2>Welcome to ROM TRENDS</h2>
+      <h3>Discover the latest trends in fashion for men, women, and kids</h3>
     </section>
+  
 
-    <section id="services" class="tab-content" style="display: none;">
-        <h2>Services</h2>
-        <ul>
-            <li>Device sales</li>
-            <li>Activation</li>
-            <li>Technical support</li>
-            <li>Repairs</li>
-            <li>Accessory sales</li>
-            <li>Trade-in programs</li>
-            <li>Financing</li>
-            <li>Insurance</li>
-            <li>Accessory installation</li>
-            <li>Device recycling</li>
-        </ul>
-    </section>
+  <section id="men" class="products">
+    <h2>Men's Collection</h2>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/41ELCD1bOKL.SY550.jpg" alt="Men Product 1"><br>
+      <a href="https://www.amazon.in/dp/B0BLLDBD76?starsLeft=1&ref_=cm_sw_r_cso_wa_apan_dp_KS9K89BSF6FB2Q7MQ7DE">BUY NOW</a><br>
+      <h2>Brand: Gauri Laxmi Enterprise</h2>
+      <h3>Gauri Laxmi Enterprise Men's Cotton Blend Zari Lining Kurta Pyjama Set</h3>
+      <img src="https://m.media-amazon.com/images/I/51MBBTqQcvL.SX679.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/5FfdhF9">BUY NOW</a>
+      <h2>Brand: ELLITI</h2>
+      <h3>ELLITI Men's Casual Summer Night dress Soft Cotton Poly Lycra Digital Printed Casual Sleepwear & Launge(Lounge) Wear Nightdress, Regular Fit Round Neck Short Sleeves T-Shirt and shorts(Boxer) Pair set with Classic Pajama Shorts stylish Beach Wear Night Set night suit Dress for men</h3>
+    </div>
+    <!-- Add more men's products here -->
+  </section>
 
-    <section id="about" class="tab-content" style="display: none;">
-        <h2>About Us</h2>
-        <p>Our mobile stores offer a wide range of smartphones and accessories in an engaging environment, providing customers with personalized recommendations for a seamless shopping experience.</p>
-    </section>
+  <section id="women" class="products">
+    <h2>Women's Collection</h2>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71t-T81aWJL.SY741.jpg" alt="Women Product 1"><br>
+      <a href="https://amzn.in/d/j2S3jJj">BUY NOW</a><br>
+      <img src="https://m.media-amazon.com/images/I/71Hy7lDZiaL.SY741.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/12qBi8g">BUY NOW</a>
+    </div>
+    <!-- Add more women's products here -->
+  </section>
 
-    <section id="contact" class="tab-content" style="display: none;">
-        <h2>Contact Us</h2>
-        <p>Address: 123 Main Street, City, Country</p>
-        <p>Phone: +1234567890</p>
-        <p>Email: info@pandumobiles.com</p>
-    </section>
+  <section id="kids" class="products">
+    <h2>Kids' Collection</h2>
+    <div class="product">
+      <br>
+      <img src="https://m.media-amazon.com/images/I/71gRHUmaBGL.SX679.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/43L6th5">BUY NOW</a>
+      <h2>Brand: Generic</h2>
+      <h3>Kids Night Suit Girls Palazzo Set Night Dress Printed Top and Pyjama Set Full Sleeve</h3>
+      <img src="https://m.media-amazon.com/images/I/61-F6XFVNVL.SX679.jpg" alt="Men Product 1"><br>
+      <a href="https://amzn.in/d/axlpZZx">BUY NOW</a>
+      <h2>Brand: superminis</h2>
+      <h3>superminis Boy's Cotton Kurta with Dhoti - Golden Thread Work, Round Collar, Full Sleeves, Side Button Kurta Set for Ethnic Wear</h3>
+    </div>
+    <!-- Add more kids' products here -->
+  </section>
 
-    <section class="android-phones">
-        <div class="phone-compartment">
-            <div class="phone">
-                <img src="https://i.gadgets360cdn.com/products/large/galaxy-s24-ultra-797x800-1705519965.jpg" alt="Android Phone 1"><br>
-                <a href="https://amzn.in/d/egmGO2R">BUY NOW</a>
-                <h2>Galaxy S24 Ultra</h2>
-                <ul>
-                    <li>Top-of-the-line specs</li>
-                    <li>Premium user experience</li>
-                    <li>High-quality camera</li>
-                    <!-- Add more features as needed -->
-                </ul>
-            </div>
-        </div>
+  <section id="about" class="about-section">
+    <h2>About Us</h2>
+    <p>Welcome to ROM TRENDS! We are dedicated to providing high-quality clothing for the whole family<br> at affordable prices. With a wide range of styles for men, women, and kids, we have something for everyone<br>Our mission is to help you look and feel your best, every day.</p><h3>contact:-</h3>
+123456789<br><h3>Email:-</h3>romtrends@gamial.com</section>
 
-        <div class="phone-compartment">
-            <div class="phone">
-                <img src="https://m.media-amazon.com/images/I/619lW2YtVhL.jpg" alt="Android Phone 2"><br>
-                <a href="https://amzn.in/d/20v8cns">BUY NOW</a>
-                <h2>iQOO 12 5G</h2>
-                <ul>
-                    <li>High Refresh Rate Display</li>
-                    <li>Sleek Design</li>
-                    <li>5G Connectivity</li>
-                    <!-- Add more features as needed -->
-                </ul>
-            </div>
-        </div>
+  
+  <script src="script.js"></script>
 
-        <div class="phone-compartment">
-            <div class="phone">
-                <img src="https://economictimes.indiatimes.com/thumb/msid-106020197,width-1200,height-1200,resizemode-4,imgsize-84010/oneplus-nord-5g.jpg" alt="Android Phone 3"><br>
-                <a href="https://amzn.in/d/cQN87hN">BUY NOW</a>
-                <h2>OnePlus smartphones</h2>
-                <ul>
-                    <li>Premium quality</li>
-                    <li>Versatile cameras</li>
-                    <li>Sleek design</li>
-                    <!-- Add more features as needed -->
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; TECHNO MOBILE All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <script></script>
-</body>
-</html>
+  
